@@ -1,0 +1,11 @@
+import React from 'react';
+import { Pie } from 'react-chartjs-2';
+
+const ChartComponent = ({ data }) => (
+  <div className="max-w-md mx-auto bg-white/10 rounded-xl p-6 backdrop-blur-sm">
+    <h2 className="text-2xl font-bold mb-4 text-center text-white">Portfolio Overview</h2>
+    <Pie data={data} options={{ responsive: true, plugins: { legend: { position: 'top', labels: { color: 'white' } } } }} />
+  </div>
+);
+
+export default ChartComponent;
